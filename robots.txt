@@ -1,0 +1,3 @@
+# Project presentation — design drafts, not for indexing.
+User-agent: *
+Disallow: /

@@ -1,0 +1,166 @@
+:root {
+  color-scheme: dark;
+  --black: #090808;
+  --paper: #e9e4e1;
+  --muted: #9b9290;
+  --crimson: #9b1d2b;
+  --line: rgba(233, 228, 225, .24);
+  font-family: "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  background: var(--black);
+  color: var(--paper);
+}
+
+* { box-sizing: border-box; }
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+  background: var(--black);
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  background:
+    radial-gradient(ellipse at 50% 54%, rgba(91, 14, 24, .26), transparent 38rem),
+    radial-gradient(ellipse at 50% 100%, rgba(48, 11, 17, .2), transparent 45rem),
+    var(--black);
+}
+
+a { color: inherit; }
+
+.landing {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: clamp(1.5rem, 4vh, 3.2rem) clamp(1.15rem, 5vw, 5rem) clamp(1.4rem, 3.5vh, 2.8rem);
+}
+
+.identity,
+.contacts {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+}
+
+.identity { padding-block: .5rem; }
+
+.identity__eyebrow,
+.contacts__label,
+.contacts__note {
+  margin: 0;
+  font-family: "Courier New", monospace;
+  font-size: .7rem;
+  font-weight: 400;
+  letter-spacing: .19em;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.identity__eyebrow { color: #c6b9b6; }
+.identity__eyebrow span { padding-inline: .25em; color: var(--crimson); }
+
+.hero-photo {
+  position: relative;
+  z-index: 1;
+  width: fit-content;
+  max-width: min(70vw, 1050px);
+  margin: 0;
+  background: transparent;
+  transform: translate3d(0, var(--photo-y, 0), 0);
+  transition: transform .35s ease-out;
+}
+
+.hero-photo__image {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: min(70svh, 720px);
+  object-fit: contain;
+  outline: 1px solid rgba(210, 205, 203, .52);
+  outline-offset: 0;
+  filter: grayscale(1) contrast(1.07) brightness(.72);
+}
+
+.hero-photo__shade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(0deg, rgba(28, 4, 9, .2), transparent 45%, rgba(6, 5, 5, .08));
+  mix-blend-mode: multiply;
+}
+
+.contacts {
+  width: min(100%, 48rem);
+  padding-top: 1.1rem;
+}
+
+.contacts__label { color: var(--muted); }
+
+.contacts__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .45rem clamp(1.05rem, 3vw, 2.2rem);
+  margin-top: .8rem;
+}
+
+.contacts__links a {
+  padding: .35rem .05rem;
+  color: var(--paper);
+  font-family: "Courier New", monospace;
+  font-size: .82rem;
+  letter-spacing: .1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color .2s ease;
+}
+
+.contacts__links a span { color: var(--crimson); }
+.contacts__links a:hover { color: #dc8e95; }
+.contacts__links a:focus-visible { outline: 1px solid #da6e78; outline-offset: 5px; }
+
+.contacts__note {
+  margin-top: .8rem;
+  color: #766e6d;
+  font-size: .58rem;
+  letter-spacing: .16em;
+}
+
+@media (max-width: 640px) {
+  .landing { padding-inline: 1rem; }
+  .identity__eyebrow { font-size: .62rem; letter-spacing: .12em; }
+  .hero-photo {
+    max-width: 70vw;
+  }
+  .hero-photo__image { max-height: 58svh; }
+  .contacts { padding-top: .8rem; }
+  .contacts__links { max-width: 22rem; gap: .25rem 1rem; }
+  .contacts__links a { font-size: .75rem; }
+}
+
+@media (max-height: 680px) and (min-width: 641px) {
+  .landing { padding-block: 1rem; }
+  .contacts { padding-top: .5rem; }
+  .contacts__links { margin-top: .35rem; }
+  .contacts__note { margin-top: .3rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+  .hero-photo { transform: none !important; }
+}

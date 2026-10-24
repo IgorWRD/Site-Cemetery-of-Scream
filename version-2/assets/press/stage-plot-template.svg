@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="1000" height="560" role="img" aria-labelledby="plotTitle plotDesc">
+  <title id="plotTitle">Cemetery of Scream — stage plot template</title>
+  <desc id="plotDesc">A generic stage plot template with drums at the back, bass and keys on stage left, guitars on stage right, vocals at the front, and the audience at the bottom. Positions and channel numbers must be confirmed by the band.</desc>
+  <rect x="0" y="0" width="1000" height="560" fill="#fbf9f4"/>
+  <text x="500" y="24" text-anchor="middle" font-family="Georgia, serif" font-size="17" fill="#161311">STAGE</text>
+  <text x="500" y="42" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" letter-spacing="1.4" fill="#8a1f1a">TEMPLATE — ADJUST TO VENUE</text>
+  <rect x="60" y="60" width="880" height="390" fill="none" stroke="#161311" stroke-width="1.4"/>
+  <text x="500" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" letter-spacing="1.4" fill="#6c6661">AUDIENCE</text>
+  <line x1="60" y1="470" x2="940" y2="470" stroke="#a8a29c" stroke-width="0.8" stroke-dasharray="4 4"/>
+  <rect x="385" y="85" width="230" height="120" rx="4" fill="#eee8dc" stroke="#161311" stroke-width="1"/>
+  <text x="500" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#161311">DRUMS</text>
+  <text x="500" y="152" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6c6661">riser [ size ]</text>
+  <text x="500" y="168" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#8a1f1a">ch 8–12</text>
+  <rect x="120" y="215" width="180" height="70" rx="4" fill="#eee8dc" stroke="#161311" stroke-width="1"/>
+  <text x="210" y="243" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#161311">BASS</text>
+  <text x="210" y="259" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6c6661">stage left</text>
+  <text x="210" y="274" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#8a1f1a">ch 5</text>
+  <rect x="120" y="320" width="180" height="70" rx="4" fill="#eee8dc" stroke="#161311" stroke-width="1"/>
+  <text x="210" y="348" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#161311">KEYS</text>
+  <text x="210" y="364" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6c6661">stage left</text>
+  <text x="210" y="379" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#8a1f1a">ch 6–7</text>
+  <rect x="700" y="215" width="180" height="70" rx="4" fill="#eee8dc" stroke="#161311" stroke-width="1"/>
+  <text x="790" y="243" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#161311">GUITAR 1</text>
+  <text x="790" y="259" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6c6661">stage right</text>
+  <text x="790" y="274" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#8a1f1a">ch 3</text>
+  <rect x="700" y="320" width="180" height="70" rx="4" fill="#eee8dc" stroke="#161311" stroke-width="1"/>
+  <text x="790" y="348" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#161311">GUITAR 2</text>
+  <text x="790" y="364" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6c6661">stage right</text>
+  <text x="790" y="379" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#8a1f1a">ch 4</text>
+  <rect x="400" y="300" width="200" height="70" rx="4" fill="#8a1f1a" stroke="#161311" stroke-width="1"/>
+  <text x="500" y="328" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#fff">VOCALS</text>
+  <text x="500" y="344" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#f5e8e5">center front</text>
+  <text x="500" y="359" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#f5e8e5">ch 1–2</text>
+  <text x="78" y="440" font-family="Arial, sans-serif" font-size="9" fill="#8a1f1a">POWER</text>
+  <text x="922" y="440" text-anchor="end" font-family="Arial, sans-serif" font-size="9" fill="#8a1f1a">POWER</text>
+  <circle cx="92" cy="428" r="4" fill="#8a1f1a"/>
+  <circle cx="908" cy="428" r="4" fill="#8a1f1a"/>
+</svg>

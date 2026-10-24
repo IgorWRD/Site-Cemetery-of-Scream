@@ -1,0 +1,3 @@
+# Draft site — do not index until approved.
+User-agent: *
+Disallow: /

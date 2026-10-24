@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cemetery of Scream — Technical Rider (template)</title>
+<style>
+  @page { size: A4; margin: 15mm 15mm 14mm; }
+  * { box-sizing: border-box; }
+  html { color: #111; background: #fff; }
+  body { margin: 0; font-family: "Segoe UI", Arial, sans-serif; font-size: 9.2pt; line-height: 1.38; color: #161311; }
+  h1, h2, h3 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-weight: 400; }
+  h1 { font-size: 25pt; line-height: 1; letter-spacing: -0.02em; }
+  h2 { margin-top: 7mm; padding-bottom: 1.4mm; border-bottom: 1.2pt solid #161311; font-size: 14pt; }
+  h3 { margin-top: 3mm; font-size: 10.5pt; }
+  p { margin: 0 0 2.2mm; }
+  ul { margin: 0 0 2mm; padding-left: 4.5mm; }
+  li { margin-bottom: 0.8mm; }
+  table { width: 100%; border-collapse: collapse; margin: 2mm 0 3mm; }
+  th, td { padding: 1.4mm 1.8mm; border: 0.5pt solid #a8a29c; vertical-align: top; text-align: left; }
+  th { background: #f0ece4; font-size: 7.3pt; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; }
+  td { font-size: 8.6pt; }
+  .muted { color: #6c6661; }
+  .small { font-size: 7.8pt; line-height: 1.35; }
+  .accent { color: #8a1f1a; }
+  .header { display: flex; align-items: flex-end; justify-content: space-between; gap: 8mm; border-bottom: 1.6pt solid #8a1f1a; padding-bottom: 4mm; }
+  .header img { width: 62mm; height: auto; display: block; }
+  .header .kicker { font-size: 7.5pt; letter-spacing: 0.16em; text-transform: uppercase; color: #8a1f1a; text-align: right; }
+  .header .kicker strong { display: block; font-size: 13pt; letter-spacing: 0.08em; color: #161311; font-weight: 400; }
+  .note { margin: 4mm 0 0; padding: 3mm 3.5mm; border-left: 2pt solid #8a1f1a; background: #f5f1e9; font-size: 8.3pt; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
+  .three-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; }
+  .box { border: 0.5pt solid #bdb6ae; padding: 3mm; }
+  .box h3 { margin-top: 0; }
+  .box ul { margin-bottom: 0; }
+  .placeholder { color: #8a1f1a; }
+  .signature { margin-top: 8mm; display: grid; grid-template-columns: 1fr 1fr; gap: 10mm; }
+  .signature div { border-top: 0.6pt solid #161311; padding-top: 1.5mm; font-size: 8pt; }
+  .stage-page { page-break-before: always; }
+  .stage-wrap { border: 0.5pt solid #bdb6ae; padding: 3mm; margin-top: 3mm; }
+  .stage-wrap svg { width: 100%; height: auto; display: block; }
+  .legend { display: flex; flex-wrap: wrap; gap: 2mm 5mm; margin-top: 2.5mm; font-size: 7.5pt; color: #555; }
+  .legend span::before { content: "—"; margin-right: 1.5mm; color: #8a1f1a; }
+  .footer { margin-top: 5mm; padding-top: 2mm; border-top: 0.5pt solid #bdb6ae; font-size: 7pt; color: #6c6661; display: flex; justify-content: space-between; gap: 5mm; }
+  .footer span:last-child { text-align: right; }
+  @media screen {
+    body { max-width: 820px; margin: 24px auto; padding: 0 24px; }
+    .screen-only { margin-bottom: 18px; padding: 10px 14px; background: #f5f1e9; border-left: 3px solid #8a1f1a; font-size: 12px; }
+  .sr-only { position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0 0 0 0) !important; clip-path: inset(50%) !important; white-space: nowrap !important; border: 0 !important; }
+  }
+  @media print {
+    .screen-only { display: none; }
+  }
+</style>
+</head>
+<body>
+  <h1 class="sr-only">Cemetery of Scream — technical rider template</h1>
+  <div class="screen-only">
+    This is a print template. Use Chrome → Print → Save as PDF, or edit the fields before exporting. Fields in <span class="placeholder">[brackets]</span> must be confirmed by the band.
+  </div>
+
+  <div class="header">
+    <img src="cos-logo-black.png" alt="Cemetery of Scream" width="1200" height="265">
+    <div class="kicker">
+      Technical rider
+      <strong>Template / 2026</strong>
+      Kraków, Poland
+    </div>
+  </div>
+
+  <div class="note">
+    <strong>Template only.</strong> This document is a working template prepared for the band. Replace every <span class="placeholder">[bracketed]</span> field with confirmed information and approve the final version before sending it to promoters or venues. Technical requirements must be agreed with the band’s production contact.
+  </div>
+
+  <h2>1. Contacts</h2>
+  <table>
+    <tr><th style="width:25%">Role</th><th>Name / channel</th></tr>
+    <tr><td>Booking</td><td class="placeholder">[ booking contact / Bandsintown / e-mail ]</td></tr>
+    <tr><td>Management / tour manager</td><td class="placeholder">[ name, phone, e-mail ]</td></tr>
+    <tr><td>Production / stage manager</td><td class="placeholder">[ name, phone, e-mail ]</td></tr>
+    <tr><td>Label / press</td><td>Sleaszy Rider Records — https://sleaszyrider.com/contact/</td></tr>
+    <tr><td>Band / social</td><td>https://www.facebook.com/cemeteryofscream · https://www.instagram.com/cemetery_of_scream_official/</td></tr>
+  </table>
+
+  <h2>2. Line-up on stage</h2>
+  <table>
+    <tr><th>#</th><th>Role</th><th>Name</th><th>Notes</th></tr>
+    <tr><td>1</td><td>Vocals</td><td>Olaf Różański</td><td class="placeholder">[ own microphone? in-ear? ]</td></tr>
+    <tr><td>2</td><td>Guitar</td><td>Marcin Piwowarczyk</td><td class="placeholder">[ amp / DI / pedalboard ]</td></tr>
+    <tr><td>3</td><td>Guitar</td><td>Paweł Góralczyk</td><td class="placeholder">[ amp / DI / pedalboard ]</td></tr>
+    <tr><td>4</td><td>Keyboards</td><td>Katarzyna Rutkowska</td><td class="placeholder">[ own keyboard / stand / DI ]</td></tr>
+    <tr><td>5</td><td>Bass</td><td>Grzegorz Królik</td><td class="placeholder">[ amp / DI ]</td></tr>
+    <tr><td>6</td><td>Drums</td><td>Tomasz Rutkowski</td><td class="placeholder">[ own kit / shared kit / breakables ]</td></tr>
+  </table>
+
+  <h2>3. Input list</h2>
+  <p class="small muted">Template channel list. Confirm the final channel count and microphone preferences with the band. The list is intentionally generic; do not treat it as an approved technical requirement.</p>
+  <table>
+    <tr><th style="width:7%">Ch</th><th style="width:30%">Source</th><th style="width:23%">Mic / DI</th><th>Notes</th></tr>
+    <tr><td>1</td><td>Lead vocal</td><td class="placeholder">[ SM58 / Beta 58 ]</td><td class="placeholder">[ stand, spare mic ]</td></tr>
+    <tr><td>2</td><td>Backing vocal</td><td class="placeholder">[ SM58 ]</td><td class="placeholder">[ optional ]</td></tr>
+    <tr><td>3</td><td>Guitar 1</td><td class="placeholder">[ mic / DI ]</td><td class="placeholder">[ amp model ]</td></tr>
+    <tr><td>4</td><td>Guitar 2</td><td class="placeholder">[ mic / DI ]</td><td class="placeholder">[ amp model ]</td></tr>
+    <tr><td>5</td><td>Bass</td><td class="placeholder">[ DI / mic ]</td><td class="placeholder">[ amp model ]</td></tr>
+    <tr><td>6–7</td><td>Keys L / R</td><td class="placeholder">[ stereo DI ]</td><td class="placeholder">[ own instrument ]</td></tr>
+    <tr><td>8</td><td>Kick</td><td class="placeholder">[ Beta 91 / D112 ]</td><td class="placeholder">[ ]</td></tr>
+    <tr><td>9</td><td>Snare</td><td class="placeholder">[ SM57 ]</td><td class="placeholder">[ ]</td></tr>
+    <tr><td>10</td><td>Hi-hat</td><td class="placeholder">[ condenser ]</td><td class="placeholder">[ ]</td></tr>
+    <tr><td>11–12</td><td>Overheads L / R</td><td class="placeholder">[ condenser pair ]</td><td class="placeholder">[ ]</td></tr>
+    <tr><td>13</td><td>Playback / click</td><td class="placeholder">[ DI / none ]</td><td class="placeholder">[ confirm with band ]</td></tr>
+    <tr><td>14–16</td><td>Spare / talkback</td><td class="placeholder">[ ]</td><td class="placeholder">[ ]</td></tr>
+  </table>
+
+  <div class="two-col">
+    <div class="box">
+      <h3>Stage / backline</h3>
+      <ul class="small">
+        <li>Minimum stage: <span class="placeholder">[ width × depth ]</span></li>
+        <li>Drum riser: <span class="placeholder">[ yes / no / size ]</span></li>
+        <li>Backline: <span class="placeholder">[ house / band / mixed ]</span></li>
+        <li>Keyboards: <span class="placeholder">[ stand / table / power ]</span></li>
+        <li>DI boxes: <span class="placeholder">[ quantity ]</span></li>
+        <li>Changeover: <span class="placeholder">[ minutes ]</span></li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Monitors / PA</h3>
+      <ul class="small">
+        <li>Monitors: <span class="placeholder">[ wedges / in-ear ]</span></li>
+        <li>Drum fill: <span class="placeholder">[ yes / no ]</span></li>
+        <li>Side fills: <span class="placeholder">[ yes / no ]</span></li>
+        <li>FOH: <span class="placeholder">[ house system ]</span></li>
+        <li>Engineer: <span class="placeholder">[ house / band ]</span></li>
+        <li>Talkback: <span class="placeholder">[ yes / no ]</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="two-col" style="margin-top:4mm">
+    <div class="box">
+      <h3>Power / lighting</h3>
+      <ul class="small">
+        <li>Power: <span class="placeholder">[ 230 V / drops / phase ]</span></li>
+        <li>Lighting: <span class="placeholder">[ house / band / mood ]</span></li>
+        <li>Smoke / haze: <span class="placeholder">[ yes / no ]</span></li>
+        <li>Dark stage between songs: <span class="placeholder">[ yes / no ]</span></li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Hospitality / travel</h3>
+      <ul class="small">
+        <li>Meals: <span class="placeholder">[ quantity / dietary ]</span></li>
+        <li>Water / towels: <span class="placeholder">[ quantity ]</span></li>
+        <li>Parking: <span class="placeholder">[ spaces ]</span></li>
+        <li>Guest list: <span class="placeholder">[ quantity ]</span></li>
+        <li>Accommodation: <span class="placeholder">[ if applicable ]</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>4. Notes</h2>
+  <p class="small"><span class="placeholder">[ Add any special requirements: intro music, stage times, merchandise table, signing session, accessibility needs, curfew, etc. ]</span></p>
+
+  <div class="signature">
+    <div>Approved by / date</div>
+    <div>Production contact / date</div>
+  </div>
+
+  <div class="footer">
+    <span>Cemetery of Scream — technical rider template / 2026</span>
+    <span>Template — not confirmed requirements</span>
+  </div>
+
+  <div class="stage-page">
+    <div class="header">
+      <img src="cos-logo-black.png" alt="Cemetery of Scream" width="1200" height="265">
+      <div class="kicker">
+        Stage plot
+        <strong>Template / 2026</strong>
+      </div>
+    </div>
+
+    <h2 style="margin-top:8mm">Stage plot — template</h2>
+    <p class="small muted">Generic six-piece layout. Adjust positions, channel numbers and power drops to the actual venue and the band’s confirmed requirements.</p>
+
+    <div class="stage-wrap">
+      <svg viewBox="0 0 1000 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="plotTitle plotDesc">
+        <title id="plotTitle">Cemetery of Scream stage plot template</title>
+        <desc id="plotDesc">A generic stage plot with drums at the back, bass and keys on stage left, guitars on stage right, vocals at the front, and the audience at the bottom.</desc>
+        <rect x="0" y="0" width="1000" height="560" fill="#fbf9f4"/>
+        <text x="500" y="24" text-anchor="middle" font-family="Georgia, serif" font-size="17" fill="#161311">STAGE</text>
+        <text x="500" y="42" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" letter-spacing="1.4" fill="#8a1f1a">TEMPLATE — ADJUST TO VENUE</text>
+        <rect x="60" y="60" width="880" height="390" fill="none" stroke="#161311" stroke-width="1.4"/>
+        <text x="500" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" letter-spacing="1.4" fill="#6c6661">AUDIENCE</text>
+        <line x1="60" y1="470" x2="940" y2="470" stroke="#a8a29c" stroke-width="0.8" stroke-dasharray="4 4"/>
+        <rect x="385" y="85" width="230" height="120" rx="4" fill="#eee8dc" stroke="#161311" stroke-width="1"/>
+        <text x="500" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#161311">DRUMS</text>
+        <text x="500" y="152" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6c6661">riser [ size ]</text>
+        <text x="500" y="168" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#8a1f1a">ch 8–12</text>
+        <rect x="120" y="215" width="180" height="70" rx="4" fill="#eee8dc" stroke="#161311" stroke-width="1"/>
+        <text x="210" y="243" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#161311">BASS</text>
+        <text x="210" y="259" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6c6661">stage left</text>
+        <text x="210" y="274" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#8a1f1a">ch 5</text>
+        <rect x="120" y="320" width="180" height="70" rx="4" fill="#eee8dc" stroke="#161311" stroke-width="1"/>
+        <text x="210" y="348" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#161311">KEYS</text>
+        <text x="210" y="364" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6c6661">stage left</text>
+        <text x="210" y="379" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#8a1f1a">ch 6–7</text>
+        <rect x="700" y="215" width="180" height="70" rx="4" fill="#eee8dc" stroke="#161311" stroke-width="1"/>
+        <text x="790" y="243" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#161311">GUITAR 1</text>
+        <text x="790" y="259" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6c6661">stage right</text>
+        <text x="790" y="274" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#8a1f1a">ch 3</text>
+        <rect x="700" y="320" width="180" height="70" rx="4" fill="#eee8dc" stroke="#161311" stroke-width="1"/>
+        <text x="790" y="348" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#161311">GUITAR 2</text>
+        <text x="790" y="364" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#6c6661">stage right</text>
+        <text x="790" y="379" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#8a1f1a">ch 4</text>
+        <rect x="400" y="300" width="200" height="70" rx="4" fill="#8a1f1a" stroke="#161311" stroke-width="1"/>
+        <text x="500" y="328" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#fff">VOCALS</text>
+        <text x="500" y="344" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#f5e8e5">center front</text>
+        <text x="500" y="359" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#f5e8e5">ch 1–2</text>
+        <text x="78" y="440" font-family="Arial, sans-serif" font-size="9" fill="#8a1f1a">POWER</text>
+        <text x="922" y="440" text-anchor="end" font-family="Arial, sans-serif" font-size="9" fill="#8a1f1a">POWER</text>
+        <circle cx="92" cy="428" r="4" fill="#8a1f1a"/>
+        <circle cx="908" cy="428" r="4" fill="#8a1f1a"/>
+      </svg>
+    </div>
+
+    <div class="legend">
+      <span>Drums — center back</span>
+      <span>Bass / keys — stage left</span>
+      <span>Guitars — stage right</span>
+      <span>Vocals — center front</span>
+      <span>Power drops — both sides</span>
+    </div>
+
+    <div class="note" style="margin-top:5mm">
+      <strong>Note.</strong> This stage plot is a layout template, not a confirmed production plan. Update positions and channel numbers after the band approves the final rider.
+    </div>
+
+    <div class="footer">
+      <span>Cemetery of Scream — stage plot template / 2026</span>
+      <span>Template — not confirmed requirements</span>
+    </div>
+  </div>
+</body>
+</html>

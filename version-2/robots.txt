@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# The site is a static, three-entry bilingual build:
+# /          language gate
+# /pl/       Polish version
+# /en/       English version
+#
+# When the production domain is known, add a Sitemap line with an absolute URL.

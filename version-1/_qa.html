@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QA</title>
+<style>
+  html,body { margin:0; background:#222; }
+  body { display:flex; gap:16px; padding:16px; align-items:flex-start; }
+  figure { margin:0; }
+  figcaption { color:#fff; font:12px/1.4 monospace; padding:4px 0 8px; }
+  iframe { border:1px solid #666; display:block; background:#000; }
+  .w320 iframe { width:320px; height:800px; }
+  .w390 iframe { width:390px; height:800px; }
+  .w768 iframe { width:768px; height:800px; }
+  .w1024 iframe { width:1024px; height:800px; }
+</style>
+</head>
+<body>
+  <figure class="w320"><figcaption>320</figcaption><iframe src="index.html" title="320"></iframe></figure>
+  <figure class="w390"><figcaption>390</figcaption><iframe src="index.html" title="390"></iframe></figure>
+  <figure class="w768"><figcaption>768</figcaption><iframe src="index.html" title="768"></iframe></figure>
+  <figure class="w1024"><figcaption>1024</figcaption><iframe src="index.html" title="1024"></iframe></figure>
+<script>
+  var hash = location.hash;
+  document.querySelectorAll('iframe').forEach(function (frame) {
+    frame.addEventListener('load', function () {
+      try {
+        var doc = frame.contentDocument;
+        doc.documentElement.style.scrollBehavior = 'auto';
+        if (hash === '#bottom') {
+          frame.contentWindow.scrollTo(0, doc.documentElement.scrollHeight);
+        } else if (hash) {
+          var id = hash.slice(1);
+          var el = doc.getElementById(id);
+          if (el) frame.contentWindow.scrollTo(0, el.getBoundingClientRect().top + frame.contentWindow.scrollY - 80);
+        }
+        doc.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-visible'); });
+      } catch (e) {}
+    });
+  });
+</script>
+</body>
+</html>

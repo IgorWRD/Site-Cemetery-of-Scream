@@ -1,0 +1,153 @@
+/* ==========================================================================
+   Cemetery of Scream — design tokens
+   One source of truth. Components use semantic tokens only.
+   ========================================================================== */
+
+@layer tokens {
+  :root {
+    color-scheme: dark;
+
+    /* ---------- primitives: soot, ash, bone ---------- */
+    --soot-1000: oklch(6.5% 0.004 45);
+    --soot-950: oklch(9% 0.006 45);
+    --soot-900: oklch(11.5% 0.007 45);
+    --soot-850: oklch(14% 0.008 45);
+    --soot-800: oklch(17% 0.009 45);
+    --soot-700: oklch(22% 0.010 45);
+
+    --ash-700: oklch(43% 0.010 65);
+    --ash-600: oklch(59% 0.012 65);
+    --ash-500: oklch(65% 0.012 70);
+    --ash-400: oklch(71% 0.012 75);
+    --ash-300: oklch(79% 0.010 80);
+
+    --bone-300: oklch(86% 0.014 82);
+    --bone-200: oklch(90% 0.014 82);
+    --bone-100: oklch(94% 0.012 82);
+    --bone-50: oklch(97% 0.008 82);
+
+    /* ---------- primitives: paper and blood ---------- */
+    --paper-200: oklch(88% 0.018 82);
+    --paper-100: oklch(92% 0.018 82);
+    --paper-50: oklch(95% 0.014 82);
+
+    --blood-800: oklch(33% 0.110 27);
+    --blood-700: oklch(39% 0.140 27);
+    --blood-600: oklch(45% 0.160 27);
+    --blood-500: oklch(51% 0.170 27);
+    --blood-400: oklch(58% 0.165 27);
+    --blood-300: oklch(69% 0.135 27);
+    --blood-200: oklch(80% 0.080 27);
+
+    /* ---------- semantic: surfaces ---------- */
+    --surface: var(--soot-950);
+    --surface-deep: var(--soot-1000);
+    --surface-raised: var(--soot-900);
+    --surface-soft: var(--soot-850);
+    --surface-paper: var(--paper-100);
+    --surface-paper-soft: var(--paper-200);
+
+    /* ---------- semantic: text ---------- */
+    --text-strong: var(--bone-50);
+    --text: var(--bone-200);
+    --text-muted: var(--ash-400);
+    --text-faint: var(--ash-600);
+    --text-inverse: var(--soot-1000);
+    --text-inverse-muted: color-mix(in oklch, var(--soot-1000) 66%, transparent);
+
+    /* ---------- semantic: lines, accent, focus ---------- */
+    --border: color-mix(in oklch, var(--bone-100) 16%, transparent);
+    --border-strong: color-mix(in oklch, var(--bone-100) 30%, transparent);
+    --border-inverse: color-mix(in oklch, var(--soot-1000) 18%, transparent);
+    --border-inverse-strong: color-mix(in oklch, var(--soot-1000) 34%, transparent);
+
+    --accent: var(--blood-500);
+    --accent-text: var(--blood-300);
+    --accent-contrast: var(--bone-50);
+    --accent-soft: color-mix(in oklch, var(--blood-500) 18%, transparent);
+    --accent-inverse: var(--blood-700);
+    --focus-ring: var(--blood-300);
+
+    /* ---------- typography ---------- */
+    --font-display: "Cormorant Garamond", "Iowan Old Style", Georgia, serif;
+    --font-body: "Barlow", "Segoe UI", system-ui, sans-serif;
+    --font-ui: "Barlow Condensed", "Arial Narrow", "Segoe UI", sans-serif;
+    --font-mono: "IBM Plex Mono", "Cascadia Code", Consolas, monospace;
+
+    --step--3: clamp(0.66rem, 0.64rem + 0.10vw, 0.72rem);
+    --step--2: clamp(0.70rem, 0.68rem + 0.10vw, 0.76rem);
+    --step--1: clamp(0.81rem, 0.78rem + 0.15vw, 0.88rem);
+    --step-0: clamp(1.00rem, 0.96rem + 0.20vw, 1.13rem);
+    --step-1: clamp(1.18rem, 1.10rem + 0.40vw, 1.38rem);
+    --step-2: clamp(1.41rem, 1.26rem + 0.75vw, 1.73rem);
+    --step-3: clamp(1.69rem, 1.43rem + 1.30vw, 2.16rem);
+    --step-4: clamp(2.03rem, 1.62rem + 2.05vw, 2.70rem);
+    --step-5: clamp(2.43rem, 1.82rem + 3.05vw, 3.38rem);
+    --step-6: clamp(2.92rem, 2.02rem + 4.50vw, 4.22rem);
+    --step-7: clamp(3.50rem, 2.20rem + 6.50vw, 5.28rem);
+    --step-8: clamp(4.20rem, 2.40rem + 9.00vw, 6.60rem);
+    --step-display: clamp(4.80rem, 1.80rem + 15.00vw, 13.00rem);
+
+    --leading-none: 0.88;
+    --leading-tight: 1.02;
+    --leading-snug: 1.22;
+    --leading-body: 1.64;
+
+    --measure: 66ch;
+    --measure-narrow: 48ch;
+
+    /* ---------- spacing (4px base) ---------- */
+    --space-3xs: 0.25rem;
+    --space-2xs: 0.5rem;
+    --space-xs: 0.75rem;
+    --space-s: 1rem;
+    --space-m: 1.5rem;
+    --space-l: 2rem;
+    --space-xl: 3rem;
+    --space-2xl: 4rem;
+    --space-3xl: 6rem;
+    --space-4xl: 8rem;
+    --space-5xl: 10rem;
+
+    --gutter: clamp(1.15rem, 4.2vw, 4.5rem);
+    --section-y: clamp(4.5rem, 10vw, 9.5rem);
+    --container: 80rem;
+    --container-narrow: 54rem;
+    --header-h: 4.75rem;
+
+    /* ---------- shape ---------- */
+    --radius-xs: 2px;
+    --radius-s: 4px;
+    --radius-m: 8px;
+    --radius-full: 999px;
+
+    --shadow-cover: 0 30px 80px oklch(0% 0 0 / 0.55), 0 4px 18px oklch(0% 0 0 / 0.35);
+    --shadow-soft: 0 18px 50px oklch(0% 0 0 / 0.35);
+
+    /* ---------- motion ---------- */
+    --duration-fast: 120ms;
+    --duration: 180ms;
+    --duration-slow: 320ms;
+    --duration-reveal: 700ms;
+    --ease-out: cubic-bezier(0.2, 0.7, 0.3, 1);
+    --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+    /* ---------- z-index ---------- */
+    --z-base: 0;
+    --z-sticky: 100;
+    --z-header: 200;
+    --z-overlay: 300;
+    --z-modal: 400;
+    --z-grain: 500;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    :root {
+      --duration-fast: 0ms;
+      --duration: 0ms;
+      --duration-slow: 0ms;
+      --duration-reveal: 0ms;
+    }
+  }
+}
