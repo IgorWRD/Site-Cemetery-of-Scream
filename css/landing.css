@@ -358,7 +358,7 @@ a { color: inherit; }
   position: relative;
   z-index: 1;
   font-family: var(--font-mono);
-  font-size: .55rem;
+  font-size: .6rem;
   letter-spacing: .14em;
   line-height: 1.6;
   text-align: center;
@@ -368,7 +368,7 @@ a { color: inherit; }
 
 .colophon p { margin: 0; }
 .colophon p span { padding-inline: .25em; color: var(--blood-light); }
-.colophon__note { margin-top: .3rem !important; color: rgba(145, 131, 127, .72); }
+.colophon__note { margin-top: .3rem !important; font-size: .54rem; color: var(--faint); }
 
 /* ---------- entrance ------------------------------------------------------- */
 
@@ -427,7 +427,7 @@ a { color: inherit; }
   .stage__lede { font-size: 1.1rem; }
   .landing__media img { object-position: center 26%; }
 
-  .colophon { font-size: .5rem; }
+  .colophon { font-size: .54rem; }
   .colophon__note { display: none; }
 }
 
