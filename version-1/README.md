@@ -30,7 +30,8 @@ web-page/
 │  ├─ js/config.js            booking email / external URLs
 │  ├─ js/site.js              navigation, reveals, lightbox, booking brief
 │  ├─ fonts/                  self-hosted WOFF2 (Google Fonts, OFL)
-│  └─ img/                    album art and archive photographs
+│  └─ img/                    album art, archive photographs and discography covers
+│     └─ discography/          nine cover images for the catalogue
 ├─ robots.txt                 currently blocks indexing (draft)
 └─ README.md
 ```
@@ -39,8 +40,9 @@ web-page/
 
 The site is a **draft**. It deliberately avoids inventing a booking email, future tour dates, a downloadable EPK, a current line-up or official social accounts that the research did not verify.
 
-- Factual copy is based on `_info/research-dossier.md`, `_info/sources.md`, `_info/Cemetery of Scream - info.docx` and the supplied album artwork.
-- Discography dates follow the dossier. `Deeppression` is shown as **1997/98** because editions differ.
+- Factual copy is based on `_info/research-dossier.md`, `_info/sources.md`, `_info/Cemetery of Scream - info.docx`, the supplied album artwork and `_info/cemetery-of-scream-discography/`.
+- The discography is a chronological catalogue of six studio albums, one EP and one demo, with release data, cover art and expandable tracklists. `Deeppression` is listed under 1997; its note mentions the 1998 Serenades edition for Europe.
+- The 2021 *Melancholy* reissue is shown as a card inside the 1995 entry, with the expanded 18-track list.
 - The band history uses **“early 1990s”** rather than choosing between 1992 and 1993.
 - No current line-up section is published: sources conflict on the bassist and the keyboardist’s surname. Add one only after band confirmation.
 - The Live section intentionally states that there are no confirmed upcoming dates. Do not add dates without confirmation, venue and ticket link.
