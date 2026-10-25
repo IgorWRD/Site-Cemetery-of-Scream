@@ -51,7 +51,28 @@ a { color: inherit; }
   text-align: center;
 }
 
-.identity { padding-block: .5rem; }
+.identity { width: 100%; padding-block: .5rem; }
+
+.identity__nav {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.identity__nav a {
+  padding: .35rem .05rem;
+  color: #766e6d;
+  font-family: "Courier New", monospace;
+  font-size: .7rem;
+  letter-spacing: .19em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color .2s ease;
+}
+
+.identity__nav a:hover { color: #dc8e95; }
+.identity__nav a:focus-visible { outline: 1px solid #da6e78; outline-offset: 5px; }
 
 .identity__eyebrow,
 .contacts__label,
@@ -139,6 +160,7 @@ a { color: inherit; }
 @media (max-width: 640px) {
   .landing { padding-inline: 1rem; }
   .identity__eyebrow { font-size: .62rem; letter-spacing: .12em; }
+  .identity__nav { position: static; transform: none; margin-top: .45rem; }
   .hero-photo {
     max-width: 70vw;
   }

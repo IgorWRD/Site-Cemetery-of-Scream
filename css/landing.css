@@ -245,9 +245,9 @@ a { color: inherit; }
 
 .doors {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: .85rem;
-  width: min(100%, 60rem);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .8rem;
+  width: min(100%, 50rem);
   min-width: 0;
   margin-top: clamp(1.4rem, 3.4vh, 2.4rem);
 }
@@ -256,7 +256,7 @@ a { color: inherit; }
   display: flex;
   flex-direction: column;
   min-width: 0;
-  min-height: 11rem;
+  min-height: 10rem;
   padding: 1.15rem 1.2rem 1rem;
   border: 1px solid var(--line);
   background: rgba(11, 9, 9, .66);
@@ -389,14 +389,15 @@ a { color: inherit; }
 .door:nth-child(1) { animation-delay: .18s; }
 .door:nth-child(2) { animation-delay: .24s; }
 .door:nth-child(3) { animation-delay: .3s; }
+.door:nth-child(4) { animation-delay: .36s; }
 
 /* ---------- responsive ----------------------------------------------------- */
 
 @media (max-width: 900px) {
   .doors {
-    grid-template-columns: 1fr;
-    width: min(100%, 34rem);
-    gap: .6rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: min(100%, 44rem);
+    gap: .65rem;
   }
 
   .door {
@@ -426,6 +427,11 @@ a { color: inherit; }
   .stage__title img { width: min(100%, 19rem); }
   .stage__lede { font-size: 1.1rem; }
   .landing__media img { object-position: center 26%; }
+
+  .doors {
+    grid-template-columns: 1fr;
+    width: min(100%, 34rem);
+  }
 
   .colophon { font-size: .54rem; }
   .colophon__note { display: none; }

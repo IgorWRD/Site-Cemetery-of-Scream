@@ -1,0 +1,110 @@
+/* ==========================================================================
+   Cemetery of Scream — design tokens
+   Art direction: BLACK REQUIEM
+   One accent (blood), one neutral family (bone / ash / void).
+   ========================================================================== */
+
+@layer tokens {
+  :root {
+    color-scheme: dark;
+
+    /* ---- primitives: black ---- */
+    --black-0: oklch(2.5% 0 0);
+    --black-1: oklch(4.5% 0.002 40);
+    --black-2: oklch(7.5% 0.003 40);
+    --black-3: oklch(11% 0.004 40);
+    --black-4: oklch(16% 0.005 40);
+
+    /* ---- primitives: bone ---- */
+    --bone-0: oklch(96% 0.012 82);
+    --bone-1: oklch(90% 0.016 82);
+    --bone-2: oklch(78% 0.014 82);
+    --bone-3: oklch(64% 0.012 82);
+    --bone-4: oklch(56% 0.010 82);
+
+    /* ---- primitives: blood ---- */
+    --blood-700: oklch(30% 0.11 27);
+    --blood-600: oklch(39% 0.14 27);
+    --blood-500: oklch(48% 0.17 27);
+    --blood-400: oklch(58% 0.19 27);
+    --blood-300: oklch(68% 0.16 27);
+
+    /* ---- semantic: surfaces ---- */
+    --surface-0: var(--black-0);
+    --surface-1: var(--black-1);
+    --surface-2: var(--black-2);
+    --surface-3: var(--black-3);
+
+    /* ---- semantic: text ---- */
+    --text-strong: var(--bone-0);
+    --text: var(--bone-1);
+    --text-muted: var(--bone-2);
+    --text-dim: var(--bone-3);
+    --text-faint: var(--bone-4);
+
+    /* ---- semantic: accent ---- */
+    --accent: var(--blood-400);
+    --accent-strong: var(--blood-500);
+    --accent-text: var(--blood-300);
+    --accent-deep: var(--blood-700);
+
+    /* ---- semantic: lines and focus ---- */
+    --line: oklch(90% 0.016 82 / 0.18);
+    --line-soft: oklch(90% 0.016 82 / 0.09);
+    --line-strong: oklch(90% 0.016 82 / 0.34);
+    --focus: oklch(88% 0.09 82);
+
+    /* ---- typography ---- */
+    --font-display: "Cormorant Garamond", "Times New Roman", serif;
+    --font-body: "Barlow", "Segoe UI", system-ui, sans-serif;
+    --font-mono: "IBM Plex Mono", "Cascadia Code", Consolas, monospace;
+
+    --fs-micro: 0.6875rem;
+    --fs-small: 0.8125rem;
+    --fs-body: clamp(1rem, 0.96rem + 0.18vw, 1.125rem);
+    --fs-lede: clamp(1.25rem, 1.08rem + 0.7vw, 1.65rem);
+    --fs-h3: clamp(1.45rem, 1.2rem + 1.1vw, 2.15rem);
+    --fs-h2: clamp(2.5rem, 1.6rem + 4vw, 5.75rem);
+    --fs-mega: clamp(4rem, 2.2rem + 11vw, 12.5rem);
+
+    --leading-tight: 0.86;
+    --leading-snug: 1.06;
+    --leading-body: 1.62;
+    --measure: 64ch;
+    --measure-wide: 78ch;
+
+    /* ---- space (4px base) ---- */
+    --space-3xs: 0.25rem;
+    --space-2xs: 0.5rem;
+    --space-xs: 0.75rem;
+    --space-s: 1rem;
+    --space-m: 1.5rem;
+    --space-l: 2rem;
+    --space-xl: 3rem;
+    --space-2xl: 4rem;
+    --space-3xl: 6rem;
+    --space-4xl: 8rem;
+    --space-5xl: 12rem;
+
+    --gutter: clamp(1.25rem, 0.5rem + 3.2vw, 4.5rem);
+    --rail: 76px;
+    --container: 1540px;
+    --container-narrow: 1080px;
+
+    /* ---- motion ---- */
+    --dur-fast: 140ms;
+    --dur: 220ms;
+    --dur-slow: 520ms;
+    --dur-cinema: 900ms;
+    --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
+    --ease-cinema: cubic-bezier(0.16, 1, 0.3, 1);
+
+    /* ---- z-index ---- */
+    --z-base: 0;
+    --z-sticky: 100;
+    --z-rail: 200;
+    --z-overlay: 300;
+    --z-modal: 400;
+    --z-grain: 500;
+  }
+}

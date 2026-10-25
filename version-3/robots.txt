@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Cemetery of Scream — doom / gothic metal, Kraków
